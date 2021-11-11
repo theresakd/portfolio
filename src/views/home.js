@@ -1,7 +1,11 @@
 import React from 'react'
+import { Button } from '@chakra-ui/react'
 
 export default function Home( props ) {
     return (
-        <h1>Hello World!</h1>
+        <div>
+            <Button>BOB</Button>
+            <h1>Hello World!</h1>
+        </div>
     );
 }
