@@ -1,5 +1,6 @@
 const HOME = '/';
 
 export default {
-    PAGE: HOME,
+    LANDING: HOME,
+    ART: HOME + '/art'
 }
