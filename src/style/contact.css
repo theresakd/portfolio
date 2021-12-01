@@ -1,17 +1,26 @@
 @import "../App.css";
 
+
 .contact-container{
+    height: 85vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items:flex-end;
 }
 
 .contact{
+    display: block;
     justify-content: left;
     width: 60%;
     padding-right: 30px;
     padding: 5%;
     padding-left: 10%;
+}
+
+.contact h1{
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-size:xx-large
 }
 
 .connect {

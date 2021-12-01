@@ -1,9 +1,76 @@
 .container{
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .work{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
+
+.work h1{
+    font-weight: bold;
+}
+
+.work-container {
+    position: relative;
+  }
+.work-container {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .work-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #E87768;
+  }
+
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #BFD8EF;
+  }
+  
+  .work-container:hover .project-overlay {
+    opacity: 95%;
+    cursor: pointer;
+  }
+
+  .work-container:hover .work-overlay {
+    opacity: 95%;
+    cursor: pointer;
+  }
+  
+  .overlay-text {
+    color: #fcf6f0;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 120%;
+  }

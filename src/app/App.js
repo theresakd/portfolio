@@ -1,25 +1,29 @@
-import { Stack } from "@chakra-ui/layout";
+import React, { Component } from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Header from "../components/header";
 import Home from "../views/home";
 import Work from "../views/work";
-import Art from "../views/art"
+import Art from "../views/art";
 import Contact from "../views/contact";
-import Footer from "../components/footer";
 
-import '../App.css'
+import Album from "../views/art-subpages/album"
 
-function App() {
 
+import "../App.css";
+
+class App extends Component {
+  render() {
   return (
     <div class="sections">
-        <Header></Header>
-        <Home></Home>
-        <Work></Work>
-        <Art></Art>
-        <Contact></Contact>
-        <Footer></Footer>
+      <Header />
+      <Home />
+      <Work />
+      <Art />
+      <Contact />
     </div>
   );
+  }
 }
 
 export default App;

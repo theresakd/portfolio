@@ -1,0 +1,59 @@
+.art-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.art-header {
+  padding-top: 40%;
+  text-align: center;
+}
+
+.art-gallery {
+  padding-top: 30px;
+}
+
+.gallery-container {
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.gallery-container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.overlay {
+  opacity: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: medium;
+  transition: 0.5s ease;
+}
+
+.gallery-container:hover .overlay {
+  opacity: 100%;
+}
+
+.text{
+  padding: 25px;
+  font-weight: bold;
+  text-align: left;
+  color: #FCF6F0;
+  background: #384BB5;
+}
+
+.subtext{
+  font-weight: 500;
+  padding: 0 10px;
+  width: fit-content;
+}
+
+.subtext:hover{
+  background: #FBC767;
+  transition: 0.5s ease;
+  color: #384BB5;
+  
+}
