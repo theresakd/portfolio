@@ -1,0 +1,94 @@
+.work-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #384bb5;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 90px;
+}
+
+.work-header img{
+  padding: 20px 0;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.exp-container {
+  position: relative;
+}
+
+.exp-text h1{
+  font-weight: bold;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #e87768;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #bfd8ef;
+}
+
+.exp-container:hover .project-overlay {
+  opacity: 95%;
+  cursor: pointer;
+}
+
+.exp-container:hover .work-overlay {
+  opacity: 95%;
+  cursor: pointer;
+}
+
+.overlay-text {
+  color: #fcf6f0;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 120%;
+}
+
+.work-stack {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .work-container{
+    height: 100%;
+  }
+  .work-stack {
+      display: block;
+  }
+
+  .work-header img{
+    width: 35vw;
+  }
+}
+

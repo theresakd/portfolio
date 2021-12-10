@@ -1,48 +1,12 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+}
+
 .chakra-ui-light {
   background-color: #fcf6f0;
-}
-
-.landing-container {
-  height: 100vh; /* Magic here */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.landing {
+  color: #384bb5;
   font-family: "Hiragino Sans";
-  font-weight: bold;
-  color: #384bb5;
-  font-size: 100px;
-  letter-spacing: 20px;
-  text-align: center;
 }
 
-.sub {
-  font-weight: lighter;
-  font-size: 30px;
-  letter-spacing: 1px;
-}
-
-.navbar {
-  padding: 50px;
-  position: fixed;
-  background: transparent;
-}
-
-.navbar a {
-  color: #c0c5e3;
-  text-align: center;
-  font-weight: bold;
-  padding: 50px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.navbar a:hover {
-  color: #384bb5;
-}
-
-.navbar a.active {
-  color: #384bb5;
-}

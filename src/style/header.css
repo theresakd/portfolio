@@ -1,0 +1,99 @@
+.navbar {
+  padding: 30px 50px;
+  position: fixed;
+  background: #fcf6f0;
+  width: 100vw;
+  z-index: 9;
+  overflow: hidden;
+}
+
+.navbar .scroll{
+  padding: 30px 10px;
+  font-size: 20px;
+}
+
+.logo .scroll{
+  width: 10px;
+}
+
+.wrapper { 
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.links {
+  color: #c0c5e3;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5vw;
+  justify-content: space-between;
+}
+
+.links a{
+    padding: 0 30px;
+}
+
+.links a:hover {
+  color: #384bb5;
+}
+
+.links a.active {
+  color: #384bb5;
+}
+
+.links {
+  cursor: pointer;
+}
+
+.links .icon {
+  display: none;
+}
+
+.logo .smol-logo {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar{
+    background-color: #384bb5;
+    padding: 3vh;
+    overflow: hidden;
+  }
+  .wrapper{
+    padding: 3px;
+  }
+  .logo .norm-logo{
+    display: none;
+  }
+  .logo .smol-logo {
+    display: block;
+    width: 50px;
+  }
+  .links a {
+    display: none;
+  }
+  .links a.icon {
+    float: right;
+    display: block;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

@@ -1,0 +1,87 @@
+.container {
+    height: 100vh; /* Magic here */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  }
+  
+  .landing {
+    font-family: "Hiragino Sans";
+    font-weight: bold;
+    color: #384bb5;
+    font-size: 100px;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+
+  .landing h1{
+    padding-top: 30px;
+  }
+  
+  .sub p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 1px; 
+    text-align: center;
+  }
+
+  .sub p span{
+    background-color: #FBC767;
+    padding: 3px;
+  }
+  
+  .home-graphic img{
+    height: 350px;
+    padding-top: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow {
+    animation: bounce 0.75s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(5, 1, 1, .5);
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow img{
+    width: 75px;
+    padding-top: 50px;
+  }
+  
+  @keyframes bounce {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(0, 7px, 0); }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .landing{
+      font-size: 13vw;
+      text-align: center;
+    }
+
+
+    .sub{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sub p{
+      font-size: 20px;
+      width: 75vw;
+    }
+
+    .arrow img{
+      width: 50px;
+    }
+
+
+}
