@@ -1,8 +1,10 @@
 .container {
     height: 100vh; /* Magic here */
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     
   }
   
@@ -13,22 +15,31 @@
     font-size: 100px;
     letter-spacing: 10px;
     text-align: center;
-    width: 100%;
-    
+  }
+
+  .landing h1{
+    padding-top: 30px;
   }
   
-  .sub {
+  .sub p {
     text-align: center;
     font-weight: lighter;
-    font-size: 30px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    letter-spacing: 1px; 
+    text-align: center;
+  }
+
+  .sub p span{
+    background-color: #FBC767;
+    padding: 3px;
   }
   
-  .home-graphic {
-    height: 300px;
-    padding-top: 50px;
-    display: flex;
+  .home-graphic img{
+    height: 350px;
+    padding-top: 80px;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
   }
 
   .arrow {
@@ -41,7 +52,7 @@
   }
 
   .arrow img{
-    width: 100px;
+    width: 75px;
     padding-top: 50px;
   }
   
@@ -50,3 +61,27 @@
     to { transform: translate3d(0, 7px, 0); }
   }
   
+  @media screen and (max-width: 1024px) {
+    .landing{
+      font-size: 13vw;
+      text-align: center;
+    }
+
+
+    .sub{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sub p{
+      font-size: 20px;
+      width: 75vw;
+    }
+
+    .arrow img{
+      width: 50px;
+    }
+
+
+}

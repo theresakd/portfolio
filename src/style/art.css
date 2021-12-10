@@ -1,16 +1,22 @@
 .art-container {
-  height: 100vh;
+  height: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  padding-top: 50px;
 }
 
-.art-header {
-  padding-top: 40%;
-  text-align: center;
+.art-header img {
+  padding-top: 75px;
+  width: 450px;
 }
 
 .art-gallery {
+  display: flex;
+  justify-content: center;
   padding-top: 30px;
+  width: 100vw;
 }
 
 .gallery-container {
@@ -37,23 +43,53 @@
   opacity: 100%;
 }
 
-.text{
+.text {
   padding: 25px;
   font-weight: bold;
   text-align: left;
-  color: #FCF6F0;
-  background: #384BB5;
+  color: #fcf6f0;
+  background: #384bb5;
 }
 
-.subtext{
+.subtext {
   font-weight: 500;
-  padding: 0 10px;
   width: fit-content;
+  text-align: left;
 }
 
-.subtext:hover{
-  background: #FBC767;
+.subtext:hover {
+  background: #fbc767;
   transition: 0.5s ease;
-  color: #384BB5;
-  
+  color: #384bb5;
+}
+
+@media screen and (max-width: 1024px) {
+  .art-container {
+    height: 100%;
+  }
+  .art-gallery {
+    display: block;
+  }
+
+  .art-header img {
+    width: 300px;
+  }
+
+  .overlay {
+    padding-top: 40px;
+    opacity: 100%;
+    position: relative;
+  }
+
+  .text {
+    color: #fcf6f0;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    line-height: 120%;
+  }
 }

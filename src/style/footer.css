@@ -2,4 +2,14 @@
     background-color: #FBC767;
     padding: 50px;
     color: #384BB5;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer{
+        padding: 30px;
+        font-size: smaller;
+        overflow: hidden;
+    }
 }

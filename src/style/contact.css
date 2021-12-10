@@ -2,7 +2,7 @@
 
 
 .contact-container{
-    height: 85vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items:flex-end;
@@ -17,15 +17,20 @@
     padding-left: 10%;
 }
 
-.contact h1{
+.contact h1 span{
     font-weight: bold;
-    padding-bottom: 15px;
-    font-size:xx-large
+    margin-bottom: 15px;
+    font-size: 75px;
 }
 
 .connect {
     font-weight: bold;
     padding-top: 50px;
+}
+
+.connect h3 span{
+    background-color: #FBC767;
+    padding: 0 10px;
 }
 
 .social {
@@ -49,4 +54,41 @@
     width: 400px;
     align-items: center;
     padding-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        padding: 0;
+    }
+
+    .contact p{
+        font-size: 15px;
+    }
+
+    .graphic img{
+        display: none;
+    }
+
+    .contact h1 span{
+        font-size: 9vw;
+    }
+
+    .connect{
+        padding-top: 20px;
+    }
+
+    .social{
+        display: block;
+        justify-content: left;
+        padding: 0;
+    }
+
+    .social img{
+        width: 30px;
+    }
+
 }

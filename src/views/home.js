@@ -5,13 +5,9 @@ import Graphic from "../assets/home-graphic.svg";
 import "../style/home.css";
 
 import { VStack } from "@chakra-ui/react"
-import useWindowSize from "../useWindowSize"
 
 export default function Home(props) {
-  const { width } = useWindowSize();
   return (
-    <>
-    {width > 500 && (
     <div class="container" id="home">
       <VStack class="landing">
       <div class="home-graphic">
@@ -20,7 +16,7 @@ export default function Home(props) {
         <div>
           <h1>hello!</h1>
           <div class="sub">
-            <p> i’m theresa and here’s a little bit about me :-)</p>
+            <p> <span>i’m theresa and here’s a little bit about me :-)</span></p>
           </div>
         </div>
       <div class="arrow">
@@ -30,7 +26,5 @@ export default function Home(props) {
         </div>
         </VStack>
     </div>
-    )};
-    </>
   );
 }
